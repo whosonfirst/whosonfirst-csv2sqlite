@@ -2,7 +2,7 @@
 
 A simple tool for indexing one or more CSV files in a SQLite database.
 
-This tool _should_ work with any old CSV file but has a few [Who's On First](https://whosonfirst.mapzen.com) -isms baked in.
+This tool _should_ work with any old CSV file but has a few [Who's On First -isms](#whos-on-first--isms) baked in.
  
 ## Usage
 
