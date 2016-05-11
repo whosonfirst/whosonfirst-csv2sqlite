@@ -29,8 +29,8 @@ See the way we're passing keys with colons? Those colons will make SQLite sad so
 ```
 $> csv2sqlite admin.db whosonfirst '' /usr/local/data/whosonfirst-data/meta/wof-country-latest.csv /usr/local/data/whosonfirst-data/meta/wof-region-latest.csv 
 bbox TEXT,cessation TEXT,country_id TEXT,deprecated TEXT,file_hash TEXT,fullname TEXT,geom_hash TEXT,geom_latitude TEXT,geom_longitude TEXT,id TEXT,inception TEXT,iso TEXT,iso_country TEXT,lastmodified TEXT,lbl_latitude TEXT,lbl_longitude TEXT,locality_id TEXT,name TEXT,parent_id TEXT,path TEXT,placetype TEXT,region_id TEXT,source TEXT,superseded_by TEXT,supersedes TEXT,wof_country TEXT
-# import /usr/local/data/whosonfirst-data/meta/wof-country-latest.csv with 220 /usr/local/data/whosonfirst-data/meta/wof-country-latest.csv records
-# import /usr/local/data/whosonfirst-data/meta/wof-region-latest.csv with 4700 /usr/local/data/whosonfirst-data/meta/wof-region-latest.csv records
+# import /usr/local/data/whosonfirst-data/meta/wof-country-latest.csv with 220 records
+# import /usr/local/data/whosonfirst-data/meta/wof-region-latest.csv with 4700 records
 $> sqlite3 admin.db 
 SQLite version 3.8.2 2013-12-06 14:53:30
 Enter ".help" for instructions
