@@ -7,7 +7,7 @@ This tool _should_ work with any old CSV file but has a few [Who's On First](htt
 ## Usage
 
 ```
-csv2sqlite <DATABASE> <TABLE> <COMMA-SEPARATED-KEYS-TO-INDEX> <ONE-OR-MORE-CSV-FILES>
+csv2sqlite <PATH-TO-DATABASE> <TABLE-NAME> <COMMA-SEPARATED-KEYS-TO-INDEX> <ONE-OR-MORE-CSV-FILES>
 ```
 
 By default columns named `wof:id` or `id` are stored as integer primary keys. For example:
