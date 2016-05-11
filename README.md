@@ -45,6 +45,11 @@ sqlite> SELECT COUNT(id) FROM whosonfirst WHERE wof_country="CA";
 * CSV column names starting with a number will make SQLite sad
 * There is very little error-checking or error-handling. For example, if you are indexing multiple CSV files it is expected that they will all have the same headers in the same order
 
+## Who's On First -isms
+
+* The following columns are automatically indexed as a SQLite `INTEGER` columns: `id`, `wof_id`, `gp_id` and `gn_id`
+* The following columns are automatically create a SQLite `PRIMARY KEY` columns: `id` or `wof_id`
+
 ## See also
 
 * https://whosonfirst.mapzen.com/
