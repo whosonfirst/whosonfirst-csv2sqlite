@@ -66,6 +66,7 @@ ${SQLITE} ${DB} "CREATE TABLE ${TABLE} (${SPEC})"
 for IDX in `echo ${INDEXES} | tr ',' '\n'`
 do
     IDX=`echo ${IDX} | tr ':' '_'`
+    echo 'CREATE INDEX `by_'${IDX}'` ON '${TABLE}' (`'${IDX}'`)'
     ${SQLITE} ${DB} 'CREATE INDEX `by_'${IDX}'` ON '${TABLE}' (`'${IDX}'`)'
 done
 
@@ -75,7 +76,7 @@ for CSV in ${FIRST} "$@"
 do
 
     COUNT=`wc -l ${CSV} | awk '{ print $1 }'`
-    echo "# import ${CSV} with ${COUNT} records"
+    echo "# import ${CSV} with ${COUNT} (-1 for the column header) records"
 
     WORK="${CSV}.work"
     cp ${CSV} ${WORK}
