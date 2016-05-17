@@ -43,7 +43,7 @@ sqlite> SELECT COUNT(id) FROM whosonfirst WHERE wof_country="CA";
 
 * CSV column names with colons will be replace with SQLite column names with underbars
 * CSV column names starting with a number will make SQLite sad
-* There is very little error-checking or error-handling. For example, if you are indexing multiple CSV files it is expected that they will all have the same headers in the same order
+* There is very little error-checking or error-handling. For example, if you are indexing multiple CSV files it is expected that they will all have the same headers in the same order. The [wof-csv-filter](https://github.com/whosonfirst/go-whosonfirst-csv#wof-csv-filter) tool can help with this.
 
 ## Who's On First -isms
 
